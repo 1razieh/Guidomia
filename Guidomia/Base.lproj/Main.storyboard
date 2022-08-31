@@ -99,6 +99,7 @@
                         <outlet property="filterView" destination="om9-vi-91f" id="bGO-RJ-LIT"/>
                         <outlet property="makeTextFielf" destination="fmk-GD-7Tx" id="gfd-Ie-zgF"/>
                         <outlet property="modelTextField" destination="yGI-4M-avx" id="QjN-mU-W9h"/>
+                        <outlet property="tableView" destination="LiR-ei-gUc" id="zsq-et-VeH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
