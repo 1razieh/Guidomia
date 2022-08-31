@@ -18,6 +18,9 @@
 		C0E558FC28BF0722005C4440 /* GuidomiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E558FB28BF0722005C4440 /* GuidomiaUITests.swift */; };
 		C0E558FE28BF0722005C4440 /* GuidomiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E558FD28BF0722005C4440 /* GuidomiaUITestsLaunchTests.swift */; };
 		C0E5590C28BF5669005C4440 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5590B28BF5669005C4440 /* Car.swift */; };
+		C0E5590E28BF5873005C4440 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5590D28BF5873005C4440 /* WebService.swift */; };
+		C0E5591128BF5939005C4440 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C0E5591028BF5939005C4440 /* data.json */; };
+		C0E5591328BF5C50005C4440 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5591228BF5C50005C4440 /* CarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		C0E558FB28BF0722005C4440 /* GuidomiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITests.swift; sourceTree = "<group>"; };
 		C0E558FD28BF0722005C4440 /* GuidomiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C0E5590B28BF5669005C4440 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		C0E5590D28BF5873005C4440 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		C0E5591028BF5939005C4440 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		C0E5591228BF5C50005C4440 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,10 @@
 		C0E558D628BF0720005C4440 /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
+				C0E5591028BF5939005C4440 /* data.json */,
 				C0E5590A28BF556F005C4440 /* Model */,
 				C0E558D728BF0720005C4440 /* AppDelegate.swift */,
+				C0E5590F28BF5880005C4440 /* WebService */,
 				C0E558D928BF0720005C4440 /* SceneDelegate.swift */,
 				C0E558DB28BF0720005C4440 /* ViewController.swift */,
 				C0E558DD28BF0720005C4440 /* Main.storyboard */,
@@ -112,6 +120,7 @@
 				C0E558E528BF0722005C4440 /* LaunchScreen.storyboard */,
 				C0E558E828BF0722005C4440 /* Info.plist */,
 				C0E558E028BF0720005C4440 /* Guidomia.xcdatamodeld */,
+				C0E5591428BF5C5A005C4440 /* ViewModel */,
 			);
 			path = Guidomia;
 			sourceTree = "<group>";
@@ -139,6 +148,22 @@
 				C0E5590B28BF5669005C4440 /* Car.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C0E5590F28BF5880005C4440 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				C0E5590D28BF5873005C4440 /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		C0E5591428BF5C5A005C4440 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C0E5591228BF5C50005C4440 /* CarViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +273,7 @@
 				C0E558E728BF0722005C4440 /* LaunchScreen.storyboard in Resources */,
 				C0E558E428BF0722005C4440 /* Assets.xcassets in Resources */,
 				C0E558DF28BF0720005C4440 /* Main.storyboard in Resources */,
+				C0E5591128BF5939005C4440 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E5590E28BF5873005C4440 /* WebService.swift in Sources */,
+				C0E5591328BF5C50005C4440 /* CarViewModel.swift in Sources */,
 				C0E558E228BF0720005C4440 /* Guidomia.xcdatamodeld in Sources */,
 				C0E558DC28BF0720005C4440 /* ViewController.swift in Sources */,
 				C0E5590C28BF5669005C4440 /* Car.swift in Sources */,

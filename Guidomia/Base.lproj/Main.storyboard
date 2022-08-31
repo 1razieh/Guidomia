@@ -1,24 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7s6-Sf-aJV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Guidima-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guidomia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tacoma" translatesAutoresizingMaskIntoConstraints="NO" id="R0Z-Im-3Fj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="bYQ-ZV-fff"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tacoma 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdC-go-YRe">
+                                <rect key="frame" x="20" y="218" width="199.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get your's now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg9-h5-MFn">
+                                <rect key="frame" x="20" y="261.5" width="141" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="om9-vi-91f" userLabel="FilterView">
+                                <rect key="frame" x="20" y="338" width="374" height="141"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnW-XF-cSX">
+                                        <rect key="frame" x="20" y="5" width="49" height="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any make" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmk-GD-7Tx">
+                                        <rect key="frame" x="20" y="35" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any model" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGI-4M-avx">
+                                        <rect key="frame" x="20" y="79" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jnW-XF-cSX" firstAttribute="leading" secondItem="om9-vi-91f" secondAttribute="leading" constant="20" id="4WN-P7-7Gc"/>
+                                    <constraint firstItem="jnW-XF-cSX" firstAttribute="top" secondItem="om9-vi-91f" secondAttribute="top" constant="5" id="HIA-dA-r63"/>
+                                    <constraint firstItem="yGI-4M-avx" firstAttribute="top" secondItem="fmk-GD-7Tx" secondAttribute="bottom" constant="10" id="HLG-GJ-L4y"/>
+                                    <constraint firstAttribute="trailing" secondItem="fmk-GD-7Tx" secondAttribute="trailing" constant="20" id="IwP-ks-UKE"/>
+                                    <constraint firstAttribute="trailing" secondItem="yGI-4M-avx" secondAttribute="trailing" constant="20" id="McZ-7X-CgZ"/>
+                                    <constraint firstItem="fmk-GD-7Tx" firstAttribute="leading" secondItem="om9-vi-91f" secondAttribute="leading" constant="20" id="TIg-0P-yko"/>
+                                    <constraint firstAttribute="height" constant="141" id="be6-GY-THP"/>
+                                    <constraint firstItem="yGI-4M-avx" firstAttribute="top" secondItem="fmk-GD-7Tx" secondAttribute="bottom" constant="10" id="eji-Op-4pF"/>
+                                    <constraint firstItem="yGI-4M-avx" firstAttribute="leading" secondItem="om9-vi-91f" secondAttribute="leading" constant="20" id="tDO-Io-Elo"/>
+                                    <constraint firstItem="fmk-GD-7Tx" firstAttribute="top" secondItem="jnW-XF-cSX" secondAttribute="bottom" constant="10" id="tdk-Ez-9tn"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-ei-gUc">
+                                <rect key="frame" x="0.0" y="499" width="414" height="363"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LiR-ei-gUc" firstAttribute="top" secondItem="om9-vi-91f" secondAttribute="bottom" constant="20" id="54h-Fa-l20"/>
+                            <constraint firstItem="jg9-h5-MFn" firstAttribute="top" secondItem="HdC-go-YRe" secondAttribute="bottom" constant="5" id="7Iq-PR-2vW"/>
+                            <constraint firstItem="LiR-ei-gUc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EEv-OE-Rhl"/>
+                            <constraint firstItem="HdC-go-YRe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FCJ-ZV-ZJL"/>
+                            <constraint firstItem="HdC-go-YRe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="FDa-UK-Xhj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="om9-vi-91f" secondAttribute="trailing" constant="20" id="JNX-kH-JaV"/>
+                            <constraint firstItem="jg9-h5-MFn" firstAttribute="top" secondItem="HdC-go-YRe" secondAttribute="bottom" constant="5" id="O07-De-kVW"/>
+                            <constraint firstItem="R0Z-Im-3Fj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y51-b6-meV"/>
+                            <constraint firstItem="jg9-h5-MFn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ahw-qk-G0v"/>
+                            <constraint firstItem="LiR-ei-gUc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dD3-xw-EbH"/>
+                            <constraint firstItem="R0Z-Im-3Fj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dyN-6K-GuN"/>
+                            <constraint firstItem="om9-vi-91f" firstAttribute="top" secondItem="R0Z-Im-3Fj" secondAttribute="bottom" constant="20" id="gMw-1u-Qb2"/>
+                            <constraint firstItem="R0Z-Im-3Fj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hzT-UR-aO4"/>
+                            <constraint firstItem="LiR-ei-gUc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tzn-NE-cTd"/>
+                            <constraint firstItem="LiR-ei-gUc" firstAttribute="top" secondItem="om9-vi-91f" secondAttribute="bottom" constant="20" id="xNr-oM-Q4O"/>
+                            <constraint firstItem="om9-vi-91f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zVp-Zv-TP3"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Guidima" id="YLf-Zl-7Sf"/>
+                    <connections>
+                        <outlet property="filterView" destination="om9-vi-91f" id="bGO-RJ-LIT"/>
+                        <outlet property="makeTextFielf" destination="fmk-GD-7Tx" id="gfd-Ie-zgF"/>
+                        <outlet property="modelTextField" destination="yGI-4M-avx" id="QjN-mU-W9h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="36.830357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G3k-3a-0Vz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7s6-Sf-aJV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qKd-IE-Ti3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VDc-3e-h4m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2XT-i5-N9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="36.830357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Tacoma" width="5472" height="3648"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
