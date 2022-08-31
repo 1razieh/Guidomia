@@ -17,6 +17,7 @@
 		C0E558F228BF0722005C4440 /* GuidomiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E558F128BF0722005C4440 /* GuidomiaTests.swift */; };
 		C0E558FC28BF0722005C4440 /* GuidomiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E558FB28BF0722005C4440 /* GuidomiaUITests.swift */; };
 		C0E558FE28BF0722005C4440 /* GuidomiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E558FD28BF0722005C4440 /* GuidomiaUITestsLaunchTests.swift */; };
+		C0E5590C28BF5669005C4440 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5590B28BF5669005C4440 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C0E558F728BF0722005C4440 /* GuidomiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuidomiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E558FB28BF0722005C4440 /* GuidomiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITests.swift; sourceTree = "<group>"; };
 		C0E558FD28BF0722005C4440 /* GuidomiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0E5590B28BF5669005C4440 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		C0E558D628BF0720005C4440 /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
+				C0E5590A28BF556F005C4440 /* Model */,
 				C0E558D728BF0720005C4440 /* AppDelegate.swift */,
 				C0E558D928BF0720005C4440 /* SceneDelegate.swift */,
 				C0E558DB28BF0720005C4440 /* ViewController.swift */,
@@ -128,6 +131,14 @@
 				C0E558FD28BF0722005C4440 /* GuidomiaUITestsLaunchTests.swift */,
 			);
 			path = GuidomiaUITests;
+			sourceTree = "<group>";
+		};
+		C0E5590A28BF556F005C4440 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0E5590B28BF5669005C4440 /* Car.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			files = (
 				C0E558E228BF0720005C4440 /* Guidomia.xcdatamodeld in Sources */,
 				C0E558DC28BF0720005C4440 /* ViewController.swift in Sources */,
+				C0E5590C28BF5669005C4440 /* Car.swift in Sources */,
 				C0E558D828BF0720005C4440 /* AppDelegate.swift in Sources */,
 				C0E558DA28BF0720005C4440 /* SceneDelegate.swift in Sources */,
 			);
