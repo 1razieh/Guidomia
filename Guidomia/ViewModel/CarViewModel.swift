@@ -18,7 +18,6 @@ class CarListViewModel {
     func populateData() {
         WebService().getData { cars in
             self.ListOfCar = cars.map(CarViewModel.init)
-
         }
     }
 }
@@ -41,6 +40,10 @@ struct CarViewModel {
     
     var makeAndModel: String {
         return car.make + " " + car.model
+    }
+    
+    var model: String {
+        return car.model
     }
     
     var make: String {
