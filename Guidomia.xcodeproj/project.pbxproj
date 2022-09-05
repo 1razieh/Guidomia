@@ -24,6 +24,8 @@
 		C0E5591328BF5C50005C4440 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5591228BF5C50005C4440 /* CarViewModel.swift */; };
 		C0E5591828BFCFFC005C4440 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5591628BFCFFC005C4440 /* CarTableViewCell.swift */; };
 		C0E5591928BFCFFC005C4440 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0E5591728BFCFFC005C4440 /* CarTableViewCell.xib */; };
+		C0E8EE0E28C4B73F00F26490 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E8EE0D28C4B73F00F26490 /* Constant.swift */; };
+		C0E8EE1128C59F3D00F26490 /* CommonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E8EE1028C59F3D00F26490 /* CommonUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		C0E5591228BF5C50005C4440 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 		C0E5591628BFCFFC005C4440 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
 		C0E5591728BFCFFC005C4440 /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		C0E8EE0D28C4B73F00F26490 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C0E8EE1028C59F3D00F26490 /* CommonUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		C0E558D628BF0720005C4440 /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
+				C0E8EE0F28C4B75F00F26490 /* Utils */,
 				C0E5590F28BF5880005C4440 /* WebService */,
 				C0E5590A28BF556F005C4440 /* Model */,
 				C0E5591428BF5C5A005C4440 /* ViewModel */,
@@ -189,6 +194,15 @@
 				C0E5591728BFCFFC005C4440 /* CarTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C0E8EE0F28C4B75F00F26490 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C0E8EE0D28C4B73F00F26490 /* Constant.swift */,
+				C0E8EE1028C59F3D00F26490 /* CommonUI.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,8 +343,10 @@
 				C0E5591828BFCFFC005C4440 /* CarTableViewCell.swift in Sources */,
 				C0E558E228BF0720005C4440 /* Guidomia.xcdatamodeld in Sources */,
 				C0E558DC28BF0720005C4440 /* CarViewController.swift in Sources */,
+				C0E8EE1128C59F3D00F26490 /* CommonUI.swift in Sources */,
 				C09A0D8F28C2A1CB00E89D2B /* extension+UIcolor.swift in Sources */,
 				C0E5590C28BF5669005C4440 /* Car.swift in Sources */,
+				C0E8EE0E28C4B73F00F26490 /* Constant.swift in Sources */,
 				C0E558D828BF0720005C4440 /* AppDelegate.swift in Sources */,
 				C0E558DA28BF0720005C4440 /* SceneDelegate.swift in Sources */,
 			);
