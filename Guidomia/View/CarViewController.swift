@@ -19,12 +19,20 @@ class CarViewController: UIViewController {
     private var filteredList = [CarViewModel]()
     private let makePickerView = UIPickerView()
     private let modelPickerView = UIPickerView()
+    private var pickerSource = [CarViewModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configure()
         self.setupLayout()
+        self.setupPickerSource()
         self.filteredList = self.listOfcar
+    }
+    
+    private func setupPickerSource() {
+        self.pickerSource = self.listOfcar
+        pickerSource.insert((CarViewModel(car: Car(consList: [""], customerPrice: 0.0, make: makeTextField.placeholder ?? "", marketPrice: 0.0, model: modelTextField.placeholder ?? "", prosList: [""], rating: 0))),
+                            at: 0)
     }
     
     private func configure() {
@@ -93,25 +101,25 @@ extension CarViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        self.listOfcar.count
+        self.pickerSource.count
     }
      
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch pickerView.tag {
         case 1:
-            return self.listOfcar[row].make
+            return self.pickerSource[row].make
         default:
-            return self.listOfcar[row].model
+            return self.pickerSource[row].model
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch pickerView.tag {
         case 1:
-            self.makeTextField.text = self.listOfcar[row].make
+            self.makeTextField.text = self.pickerSource[row].make
             self.makeTextField.resignFirstResponder()
         default:
-            self.modelTextField.text = listOfcar[row].model
+            self.modelTextField.text = pickerSource[row].model
             self.modelTextField.resignFirstResponder()
         }
     }
@@ -126,7 +134,12 @@ extension CarViewController: UITextFieldDelegate {
         default:
             self.filteredList = self.listOfcar.filter({$0.model == textField.text})
         }
+        
+        if self.filteredList.count == 0 {
+            self.filteredList = self.listOfcar
+        }
         self.tableView.reloadData()
+        
     }
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
