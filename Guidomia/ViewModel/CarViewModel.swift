@@ -39,7 +39,7 @@ struct CarViewModel {
     }
     
     var makeAndModel: String {
-        return car.make + " " + car.model
+        return   "\(car.make) \(car.model)"
     }
     
     var model: String {
@@ -56,7 +56,7 @@ struct CarViewModel {
     
     var marketPrice: String {
         let price = Int(customerPrice / 1000)
-        return  String(price) + "K"
+        return  "\(price)\(priceSign)"
        
     }
     

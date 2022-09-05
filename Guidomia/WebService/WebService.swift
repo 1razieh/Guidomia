@@ -16,7 +16,7 @@ class WebService {
     
     func getData(completion: @escaping([Car])-> Void) {
         if let fileLocation = Bundle.main.url(forResource: "data", withExtension: "json"){
-            do{
+            do {
                 let content = try Data(contentsOf: fileLocation)
                 guard parseJson(content) != nil else {
                     print(NetWorkError.decodingError.localizedDescription)

@@ -45,12 +45,12 @@
                                     </label>
                                     <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any make" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmk-GD-7Tx">
                                         <rect key="frame" x="20" y="35" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any model" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGI-4M-avx">
                                         <rect key="frame" x="20" y="79" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -97,7 +97,7 @@
                     <navigationItem key="navigationItem" title="GUIDOMIA" largeTitleDisplayMode="always" id="YLf-Zl-7Sf"/>
                     <connections>
                         <outlet property="filterView" destination="om9-vi-91f" id="bGO-RJ-LIT"/>
-                        <outlet property="makeTextFielf" destination="fmk-GD-7Tx" id="gfd-Ie-zgF"/>
+                        <outlet property="makeTextField" destination="fmk-GD-7Tx" id="iWz-Wj-N7K"/>
                         <outlet property="modelTextField" destination="yGI-4M-avx" id="QjN-mU-W9h"/>
                         <outlet property="tableView" destination="LiR-ei-gUc" id="zsq-et-VeH"/>
                     </connections>
