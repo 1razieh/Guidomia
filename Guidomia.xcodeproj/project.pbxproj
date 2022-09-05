@@ -136,7 +136,6 @@
 				C0E5591028BF5939005C4440 /* data.json */,
 				C0E558D728BF0720005C4440 /* AppDelegate.swift */,
 				C0E558D928BF0720005C4440 /* SceneDelegate.swift */,
-				C0E558DD28BF0720005C4440 /* Main.storyboard */,
 				C0E558E328BF0722005C4440 /* Assets.xcassets */,
 				C0E558E528BF0722005C4440 /* LaunchScreen.storyboard */,
 				C0E558E828BF0722005C4440 /* Info.plist */,
@@ -192,6 +191,7 @@
 				C0E558DB28BF0720005C4440 /* CarViewController.swift */,
 				C0E5591628BFCFFC005C4440 /* CarTableViewCell.swift */,
 				C0E5591728BFCFFC005C4440 /* CarTableViewCell.xib */,
+				C0E558DD28BF0720005C4440 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
