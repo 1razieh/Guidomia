@@ -16,8 +16,8 @@ class CarListViewModel {
     }
     
     func populateData() {
-        WebService().getData { cars in
-            self.ListOfCar = cars.map(CarViewModel.init)
+        WebService().getData { [weak self] cars in
+            self?.ListOfCar = cars.map(CarViewModel.init)
         }
     }
 }
